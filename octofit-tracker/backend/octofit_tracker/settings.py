@@ -28,6 +28,9 @@ DEBUG = True
 # Allow all hosts
 ALLOWED_HOSTS = ['*']
 
+# Add Codespace URL to allowed hosts
+ALLOWED_HOSTS += ['verbose-space-adventure-ggjx469797f9xqg-8000.app.github.dev']
+
 
 # Application definition
 
@@ -67,6 +70,7 @@ TEMPLATES = [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
+                "django.template.context_processors.request",
                 "django.contrib.messages.context_processors.messages",
             ],
         },
@@ -152,3 +156,5 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
+# Allow all hosts
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'redesigned-space-telegram-q766prgv55p72xvvv-8000.app.github.dev']
